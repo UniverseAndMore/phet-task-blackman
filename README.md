@@ -1,5 +1,15 @@
-Example Simulation
-=============
+# Updated files by Matthew Blackman:
+
+```
+js/common/ExampleSimConstants.js
+js/model/MagnetsModel.js
+js/view/MagnetsControlPanel.js
+js/view/MagnetsScreenView.js
+</ul>
+```
+
+# Example Simulation
+
 "Example Simulation" is an educational simulation in HTML5, by <a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
 at the University of Colorado Boulder.
 For a description of this simulation, associated resources, and a link to the published version,
@@ -14,12 +24,15 @@ For a description of this simulation, associated resources, and a link to the pu
 </a>
 
 ### Documentation
+
 The <a href="https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md" target="_blank">PhET Development Overview</a> is the most complete guide to PhET Simulation
 Development. This guide includes how to obtain simulation code and its dependencies, notes about architecture & design, how to test and build
 the sims, as well as other important information.
 
 ### Quick Start
+
 (1) Clone the simulation and its dependencies:
+
 ```
 git clone https://github.com/phetsims/assert.git
 git clone https://github.com/phetsims/axon.git
@@ -47,6 +60,7 @@ git clone https://github.com/phetsims/utterance-queue.git
 ```
 
 (2) Install dev dependencies:
+
 ```
 cd chipper
 npm install
@@ -79,5 +93,7 @@ Contact us at our Google Group: <a href="http://groups.google.com/forum/#!forum/
 Help us improve, create a <a href="http://github.com/phetsims/example-sim/issues/new" target="_blank">New Issue</a>
 
 ### License
+
 See the <a href="https://github.com/phetsims/example-sim/blob/master/LICENSE" target="_blank">LICENSE</a>
+
 # phet-task-blackman
