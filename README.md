@@ -5,7 +5,6 @@ js/common/ExampleSimConstants.js
 js/model/MagnetsModel.js
 js/view/MagnetsControlPanel.js
 js/view/MagnetsScreenView.js
-</ul>
 ```
 
 # Example Simulation
