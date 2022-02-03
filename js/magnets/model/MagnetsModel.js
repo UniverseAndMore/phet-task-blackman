@@ -9,17 +9,45 @@
  * @author Steele Dalton (PhET Interactive Simulations)
  */
 
-import Dimension2 from '../../../../dot/js/Dimension2.js';
-import Vector2 from '../../../../dot/js/Vector2.js';
-import exampleSim from '../../exampleSim.js';
-import BarMagnet from './BarMagnet.js';
+import Dimension2 from "../../../../dot/js/Dimension2.js";
+import Vector2 from "../../../../dot/js/Vector2.js";
+import exampleSim from "../../exampleSim.js";
+import BarMagnet from "./BarMagnet.js";
+import ExampleSimConstants from "../../common/ExampleSimConstants.js";
 
 class MagnetsModel {
+  //the array of bar magnets added from the control panel
+  addedBarMagnets = [];
 
   constructor() {
-
     // @public {BarMagnet} initial bar magnet model element
-    this.barMagnet = new BarMagnet( new Dimension2( 250, 50 ), new Vector2( 0, 0 ), 0 );
+    this.barMagnet = new BarMagnet(
+      new Dimension2(
+        ExampleSimConstants.BAR_MAGNET_WIDTH,
+        ExampleSimConstants.BAR_MAGNET_HEIGHT
+      ),
+      new Vector2(0, 0),
+      0
+    );
+  }
+
+  /**
+   * Add a new bar magnet to the model at the specified position
+   * @public
+   * @param {Vector2} position - position to add the bar magnet to the view
+   * @returns {BarMagnet} - the bar magnet added to the model
+   */
+  addNewMagnetAtPosition(position) {
+    const newBarMagnet = new BarMagnet(
+      new Dimension2(
+        ExampleSimConstants.BAR_MAGNET_WIDTH,
+        ExampleSimConstants.BAR_MAGNET_HEIGHT
+      ),
+      position,
+      0
+    );
+    this.addedBarMagnets.push(newBarMagnet);
+    return newBarMagnet;
   }
 
   /**
@@ -29,8 +57,9 @@ class MagnetsModel {
    */
   reset() {
     this.barMagnet.reset();
+    this.addedBarMagnets.length = 0; //reset the array
   }
 }
 
-exampleSim.register( 'MagnetsModel', MagnetsModel );
+exampleSim.register("MagnetsModel", MagnetsModel);
 export default MagnetsModel;

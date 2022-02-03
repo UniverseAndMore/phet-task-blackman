@@ -80,3 +80,4 @@ Help us improve, create a <a href="http://github.com/phetsims/example-sim/issues
 
 ### License
 See the <a href="https://github.com/phetsims/example-sim/blob/master/LICENSE" target="_blank">LICENSE</a>
+# phet-task-blackman

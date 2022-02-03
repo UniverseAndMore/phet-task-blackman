@@ -13,5 +13,11 @@
   },
   "flipPolarity": {
     "value": "Flip Polarity"
+  },
+  "moveMagnet": {
+    "value": "Move Magnet"
+  },
+  "addMagnet": {
+    "value": "Add Magnet"
   }
 }
